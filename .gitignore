@@ -1,0 +1,4 @@
+node_modules
+templates
+.parcel-cache
+.DS_Store

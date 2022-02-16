@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Mastercraft Bamboo Monitor Riser</title>
+  </head>
+  <body>
+    <div class="h-[400px] bg-desktop-banner bg-cover bg-center">
+      <div class="nav-gradient relative z-10 w-full"></div>
+      <nav
+        class="container relative top-[-100px] z-50 mx-auto max-w-[1440px] items-center"
+      >
+        <!-- Desktop menu -->
+        <div class="flex h-[100px] justify-between self-center">
+          <div class="flex items-center">
+            <!-- Logo  -->
+            <img class="mr-[60px] flex" src="./assets/logo.svg" alt="logo" />
+          </div>
+
+          <!--  Navigation Right -->
+          <div class="hidden items-center font-medium text-white md:flex">
+            <a class="py-2 px-6" href="">About</a>
+            <a class="py-2 px-6" href="">Discover</a>
+            <a class="py-2 px-6" href="">Get Started</a>
+          </div>
+
+          <!-- Mobile icon -->
+          <div class="menu-icon flex items-center md:hidden">
+            <img
+              class="cursor-pointer"
+              src="/assets/icon-hamburger.svg"
+              alt="menu"
+              menu-icon-open
+            />
+          </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="container relative hidden rounded bg-white" mobile-menu>
+          <div
+            class="text-5xl mr-[1rem] flex flex-col divide-y divide-border-grey font-medium"
+          >
+            <a class="hover:bg-hover-menu-list divide-y p-5" href="">About</a>
+            <a class="hover:bg-hover-menu-list p-5" href="">Discover</a>
+            <a class="hover:bg-hover-menu-list p-5" href="">Get started</a>
+          </div>
+        </nav>
+        </div>
+
+        <div
+          class="mx-auto grid h-auto place-content-center items-center justify-center p-[1rem]"
+        >
+
+          <div class="relative top-[-80px]">
+            <!-- Project Title Container-->
+            <div class="flex flex-col items-center">
+              <img
+                class="absolute top-[-30px]"
+                src="./assets/logo-mastercraft.svg"
+              />
+            </div>
+            <div
+              class="cards-container max-w-[740px] rounded-lg border-[1px] border-solid border-border-grey bg-white shadow-lg"
+            >
+              <div class="flex flex-col items-center justify-center">
+                <div class="text-center">
+                  <h1>Mastercraft Bamboo Monitor Riser</h1>
+                  <h2 class="pt-3 text-[#9c9c9c]">
+                    A beautiful & handcrafted monitor stand to reduce neck and
+                    eye strain.
+                  </h2>
+
+                </div>
+                <div class="relative flex w-full justify-between pt-10">
+                  <button class="btn btn-mobile-resize bg-active-button" show-rewards-modal>
+                    Back this project
+                  </button>
+
+                  <div class="flex flex-row items-end justify-end" bookmark-section>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Current Stage Container -->
+
+            <div
+              class="cards-container max-w-[740px] rounded-lg border-[1px] border-solid border-border-grey bg-white shadow-lg" summary-section
+            >
+              <div
+                class="details-info flex items-center justify-between md:flex-row"
+              >
+                <div
+                  class="current-price flex w-[150px] flex-col items-center justify-center"
+                >
+                  <h1 class="text-[2em]" total-funds-preview></h1>
+                  <span class="span-details">of $100,00 backed</span>
+                </div>
+
+                <div class="span-line desktop-line"></div>
+                <div class="mobile-line hidden border-b-2"></div>
+
+                <div
+                  class="backers flex w-[150px] flex-col items-center justify-center"
+                >
+                  <h1 class="text-[2em]" total-backers-preview></h1>
+                  <span class="span-details">total backers</span>
+                </div>
+
+                <div class="span-line desktop-line"></div>
+                <div class="mobile-line hidden border-t-2"></div>
+
+                <div
+                  class="days-left flex w-[150px] flex-col items-center justify-center"
+                >
+                  <h1 class="text-[2em]">56</h1>
+                  <span class="span-details">days left</span>
+                </div>
+              </div>
+
+              <!-- Progress Bar Section -->
+              <div class="progres-section mt-10" progress-section>
+                <div class="progres-bar bg-[#F4F4F4]">
+                  <div class="h-[12px] rounded-full bg-[#3CB4AB] max-w-[100%]" progress-bar-width></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- About Project Container -->
+            <div
+              class="cards-container max-w-[740px] rounded-lg border-[1px] border-solid border-border-grey bg-white shadow-lg"
+            >
+              <h1>About this project</h1>
+              <p class="paragraphs">
+                The Mastercraft Bamboo Monitor Riser is a sturdy and stylish
+                platform that elevates your screen to a more comfortable viewing
+                height. Placing your monitor at eye level has the potential to
+                improve your posture and make you more comfortable while at
+                work, helping you stay focused on the task at hand.
+              </p>
+              <p class="paragraphs">
+                Featuring artisan craftsmanship, the simplicity of design
+                creates extra desk space below your computer to allow notepads,
+                pens, and USB sticks to be stored under the stand.
+              </p>
+
+              <!-- Reward Boxes -->
+              <div id="reward_boxes_container">
+                
+                <!-- Data Dynamically inserted via insertAdjacentHTML-->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal rewards -->
+  <div class="modal-show flex justify-center align-middle" id="modal-show">
+    <div
+    class="cards-container max-w-[740px] rounded-lg border-[1px] border-solid border-border-grey bg-white shadow-lg justify-center items-center hidden absolute top-[50%] mx-[1rem]" modal-rewards
+  >
+  
+  <div class="flex flex-row justify-between items-center">
+    <h1>Back this project</h1>
+    <img class="cursor-pointer close-modal w-[20px] h-[20px]" src="./assets/icon-close-modal.svg" alt="Close rewards modal">
+  </div>
+    
+    <p class="pt-3 pb-5 font-medium leading-7 text-[#9c9c9c]">
+      Want to support us in bringing Mastercraft Bamboo Monitor Riser
+      out in the world?
+    </p>
+  
+    <ul class="relative">
+      <li class="relative pt-5">
+        <input
+          class="peer sr-only"
+          type="radio"
+          value="no-reward"
+          name="answer"
+          id="noreward_yes"
+          onclick="showNoReward();"
+        />
+        <label
+          class="flex cursor-pointer rounded-lg border border-border-darker-grey bg-white p-5 hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-theme-green"
+          for="noreward_yes"
+        >
+          <div class="">
+            <h2 class="font-bold">Pledge with no reward</h2>
+  
+            <p class="mb-10 pt-3 text-[#9c9c9c]">
+              Choose to support us without a reward if you simply
+              believe in our project. As a backer, you will be signed
+              up to receive product updates via email.
+            </h2>
+  
+            <div
+              class="flex flex-col items-center justify-between border-t-[2px] border-solid border-border-grey pt-5 sm:flex-row hidden" id="noreward"
+            >
+              <span class="text-[#9c9c9c]">Enter your pledge</span>
+              <div class="adjust-price-box flex flex-row items-center justify-center">
+              <div class="items-center pt-6 sm:pt-0">
+                <div class="value-input">
+                <span class="currency">$</span
+                ><input
+                  id="noreward-value"
+                  class="value-input-field mr-3 h-[56px] w-[110px] self-center rounded-full border-[2px] border-solid border-border-grey p-2 font-bold"
+                  type="number"
+                  min="1"
+                  step="1"
+                  max="999999"
+                  value="1"
+                /></div>
+              </div>
+              <div class="btn-continue">
+                <button class="btn-confirm-show btn bg-active-button" onclick="addFunds();" data-add-funds>Continue</button>
+              </div>
+            </div>
+            </div>
+          </div>
+        </label>
+      </li>
+  
+        <li id="bamboorewardbox" class="relative pt-5">
+          <input
+            class="peer sr-only"
+            type="radio"
+            value="bamboo-stand"
+            name="answer"
+            id="bamboo_yes"
+            onclick="showBambooStand();"
+          />
+          <label
+            class="flex cursor-pointer flex-col rounded-lg border border-border-darker-grey bg-white p-5 hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-theme-green md:flex-col"
+            for="bamboo_yes"
+          >
+            <div class="flex justify-between flex-row">
+              <div class="flex flex-row adjust-rewards order-1">
+                <h2 class="font-bold">Bamboo Stand</h2>
+                <span class="pledge-span px-5"
+                  >Pledge $25 or more</span
+                >
+              </div>
+            </div>
+            <div
+            class="relative flex items-center justify-end flex-row remain-order top-[-23px]"
+          >
+            <span id="bamboquan" class="days-span-rewards" bamboo-quantity>0</span>
+            <span class="bg pl-2 text-[#9c9c9c]">left</span>
+          </div>
+  
+            <p class="mb-10 pt-3 text-[#9c9c9c] rewards-paragraph-order">
+              You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.
+            </p>
+  
+            <div
+            class="flex flex-col items-center justify-between border-t-[2px] border-solid border-border-grey pt-5 sm:flex-row order-4 hidden" id="bamboo_stand"
+          >
+            <span class="text-[#9c9c9c]">Enter your pledge</span>
+            <div class="adjust-price-box flex flex-row items-center justify-center">
+              <div class="items-center pt-6 sm:pt-0">
+                <div class="value-input">
+                <span class="currency">$</span
+                ><input
+                  id="bamboo-value"
+                  class="value-input-field mr-3 h-[56px] w-[110px] self-center rounded-full border-[2px] border-solid border-border-grey p-2 font-bold"
+                  type="number"
+                  min="25"
+                  step="1"
+                  max="999999"
+                  value="25"
+                /></div>
+              </div>
+              <div class="btn-continue">
+                <button class="btn-confirm-show btn bg-active-button" onclick="addFunds();" data-add-funds>Continue</button>
+              </div>
+          </div>
+          </label>
+        </li>
+  
+        <li id="blackeditionbox" class="relative pt-5">
+          <input
+            class="peer sr-only"
+            type="radio"
+            value="black-edition"
+            name="answer"
+            id="black_edition_yes"
+            onclick="showBlackEdition();"
+          />
+          <label
+            class="flex cursor-pointer flex-col rounded-lg border border-border-darker-grey bg-white p-5 hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-theme-green md:flex-col"
+            for="black_edition_yes"
+          >
+            <div class="flex justify-between flex-row">
+              <div class="flex flex-row adjust-rewards order-1">
+                <h2 class="font-bold">Black Edition Stand</h2>
+                <span class="pledge-span px-5"
+                  >Pledge $75 or more</span
+                >
+              </div>
+            </div>
+            <div
+            class="relative flex items-center justify-end flex-row remain-order top-[-23px]"
+          >
+            <span id="blackoquan" class="days-span-rewards">0</span>
+            <span class="bg pl-2 text-[#9c9c9c]">left</span>
+          </div>
+  
+            <p class="mb-10 pt-3 text-[#9c9c9c] rewards-paragraph-order">
+              You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.
+            </p>
+  
+            <div
+            class="flex flex-col items-center justify-between border-t-[2px] border-solid border-border-grey pt-5 sm:flex-row order-4 hidden" id="black_edition"
+          >
+            <span class="text-[#9c9c9c]">Enter your pledge</span>
+            <div class="adjust-price-box flex flex-row items-center justify-center">
+              <div class="items-center pt-6 sm:pt-0">
+                <div class="value-input">
+                <span class="currency">$</span
+                ><input
+                  id="black-edition-value"
+                  class="value-input-field mr-3 h-[56px] w-[110px] self-center rounded-full border-[2px] border-solid border-border-grey p-2 font-bold"
+                  type="number"
+                  min="75"
+                  step="1"
+                  max="999999"
+                  value="75"
+                /></div>
+              </div>
+              <div class="btn-continue">
+                <button class="btn-confirm-show btn bg-active-button" onclick="addFunds();" data-add-funds>Continue</button>
+              </div>
+          </div>
+          </label>
+        </li>
+  
+      <li class="relative pt-5 disabled">
+        <input
+          disabled
+          class="peer sr-only"
+          type="radio"
+          value="maybe"
+          name="answer"
+          id="mahagony"
+        />
+        <label
+          class="flex cursor-pointer flex-col rounded-lg border border-border-darker-grey bg-white p-5 hover:bg-gray-50 focus:outline-none peer-checked:border-transparent peer-checked:ring-2 peer-checked:ring-theme-green md:flex-col"
+          for="answer_maybe"
+        >
+        <div class="flex justify-between flex-row">
+          <div class="flex flex-row adjust-rewards order-1">
+            <h2 class="font-bold">Mahogany Special Edition</h2>
+            <span class="pledge-span px-5"
+              >Pledge $200 or more</span
+            >
+          </div>
+        </div>
+        <div
+        class="relative flex items-center justify-end flex-row remain-order top-[-23px]"
+      >
+        <span class="days-span-rewards" mahogany-quantity>0</span>
+        <span class="bg pl-2 text-[#9c9c9c]">left</span>
+      </div>
+  
+        <p class="mb-10 pt-3 text-[#9c9c9c] rewards-paragraph-order">
+          You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included.
+        </p>
+    </label>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+  <!-- Thank you message -->
+  <div class="flex justify-center align-middle hidden" confirmation-message>
+    <div
+    class="cards-container max-w-[520px] rounded-lg border-[1px] border-solid border-border-grey bg-white shadow-lg justify-center items-center absolute top-[50%] mx-[1rem]"
+  >
+  
+  <div class="flex flex-col items-center">
+    <img class="w-[80px] pb-8" src="/assets/icon-check.svg">
+    <h1>Thanks for your support!</h1>
+  </div>
+    
+    <p class="pt-3 pb-5 leading-7 text-[#9c9c9c] text-center">
+      Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get an email once our campaign is completed.
+    </p>
+<div class="flex justify-center pt-5">
+    <button class="btn btn-mobile-resize bg-active-button" confirm_message>
+       Got it!
+      </button>
+    </div>
+  </div>
+  </div>
+  <div class="overlay hidden"></div>
+        
+  <script src="./js/app.js"></script>
+  <script src="./js/script.js"></script>
+  </body>
+</html>
